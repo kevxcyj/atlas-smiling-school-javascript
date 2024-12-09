@@ -2007,17 +2007,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
             carouselItem.innerHTML = `
               <div class="row mx-auto align-items-center">
-                <div class="col-12 col-sm-2 col-lg-2 offset-lg-1 text-center">
-                  <img src="${index === 0 ? 'images/profile_5.jpg' : 'images/profile_2.jpg'}" class="d-block align-self-center" alt="Quote Author ${index + 1}" />
+                <div class="col-12 col-sm-3 col-lg-2 offset-lg-1 text-center">
+                  <img src="${index === 0 ? 'images/profile_5.jpg' : 'images/profile_2.jpg'}" class="author-image" alt="Quote Author ${index + 1}" />
                 </div>
-                <div class="col-12 col-sm-7 offset-sm-2 col-lg-9 offset-lg-0">
+                <div class="col-12 col-sm-9 col-lg-9 offset-lg-0">
                   <div class="quote-text">
                     <p class="text-white">${quote.text || 'No quote available.'}</p>
                     <h4 class="text-white font-weight-bold">${quote.author || 'Unknown Author'}</h4>
                     <span class="text-white">${quote.title || 'No title available'}</span>
-                  </div>
                 </div>
-              </div>
+            </div>
+        </div>
             `;
 
             carouselContainer.appendChild(carouselItem);
